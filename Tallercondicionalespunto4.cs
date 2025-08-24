@@ -14,7 +14,7 @@
             else if (letra == 'i' || letra =='I')
             {
    
-                Console.WriteLine($"El personaje se está moviendo a la derecha");
+                Console.WriteLine($"El personaje se está moviendo a la izquierda");
             }
             else
             {
@@ -22,4 +22,5 @@
             }
     }
 }
+
 
