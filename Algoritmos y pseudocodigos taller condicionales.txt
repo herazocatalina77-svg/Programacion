@@ -1,0 +1,91 @@
+﻿Algoritmos y pseudocódigos taller condicionales
+Algoritmo punto 3:
+Algoritmo para ingresar coordenadas de tres puntos d = √((x2 - x1)² + (y2 - y1)²):
+
+ingresar coordenada 1 (en x)1
+
+mostrar coordenada 1 (en x)
+
+ingresar coordenada 1 (en y)2
+
+mostrar coordenada 1 (en y)
+
+ingresar coordenada 2 (en x)3
+
+mostrar coordenada 2 (en x)
+
+ingresar coordenada 2 (en y)4
+
+mostrar coordenada 2 (en y)
+
+ingresar coordenada 3 (en x)5
+
+mostrar coordenada 3 (en x)
+
+ingresar coordenada 3 (en y)6
+
+mostrar coordenada 3 (en y)
+
+//operación entre coordenada 1 y 2
+
+restar num3 y num1 (num7)
+
+multiplicar num7 por num7 (num8)
+
+restar num4 y num2 (num9)
+
+multiplicar num9 por num9 (num10)
+
+sumar num8 y num10 (num11)
+
+sacarle la raiz cuadrada a num 11 
+
+//operación entre coordenada 2 y 3
+
+restar num5 y num3 (num12)
+
+multiplicar num12 por num12 (num13)
+
+restar num6 y num4 (num14)
+
+multiplicar num14 por num14 (num15)
+
+sumar num13 y num15 (num16)
+
+sacarle raiz a num16
+
+//operación entre coordenada 3 y 1
+
+restar num5 y num1 (num17)
+
+multiplicar num17 por num17 (num18)
+
+restar num6 y  num2 (num19)
+
+multiplicar num19  por num19 (num20)
+
+sumar num18 y num20 (num21)
+
+sacarle raiz a num21
+
+//Comprobación de que es un triangulo
+
+sumar num11 y num16 (num22)
+
+sumar num16 y num21 (num23)
+
+sumar num21 y num11 (num24)
+
+¿El resultado de alguna de las distancias es 0?
+
+En el caso de que sí: Se puede decir de que no es triangulo
+
+En el caso de que no: Nos lleva a la siguiente pregunta
+
+¿Es num22 igual a num21 || es num23 igual a num11 || es num24 igual a num16?
+
+Verdadero: No es un triángulo
+
+escribir en la consola que no es un triángulo
+
+Falso: Es un triangulo
