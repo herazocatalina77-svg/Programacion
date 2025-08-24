@@ -1,5 +1,4 @@
 ﻿using System;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 public class Program
 {
     static void Main(string[] args)
@@ -70,4 +69,5 @@ public class Program
             }
         }
     }
+
 }
