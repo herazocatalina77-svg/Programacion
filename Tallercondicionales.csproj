@@ -1,0 +1,61 @@
+﻿using System;
+public class Program
+{
+    static void Main(string[] args)
+    {
+        int num1 = 0;
+        int num2 = 0;
+        int num3 = 0;
+
+        Console.WriteLine("Ingrese el numero 1:");
+        num1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrese el numero 2:");
+        num2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrese el numero 3:");
+        num3 = Convert.ToInt32(Console.ReadLine());
+        if (num1 == num2 || num2 == num3 || num1 == num3)
+        {
+            Console.WriteLine($"Debe ingresar numeros diferentes");
+        }
+        else
+        {
+            if (num1 > num2) //mayor al numero dos
+            {
+                if (num1 > num3) //verdadero: como el numero 1 es mayor al dos y se supone en este condicional dice que es mayor al tres, entonces, el 1 es el mayor de todos
+                {
+                    if (num3 > num2)
+                    {
+                        Console.WriteLine($"{num1},{num3},{num2}"); //bien ejecutado
+
+                    }
+                    else //falso, el numero 1 sigue siendo el mayor de todos, solo que ahora el 3 es menor que el numero dos
+                    {
+                        Console.WriteLine($"{num1},{num2},{num3}"); //bien ejecutado
+                    }
+                }
+                else //en el caso de que el 1 sea mayor al dos pero no sea mayor al 3 (3,2,1)
+                {
+                    if (num2 < num1)
+                    {
+                        Console.WriteLine($"{num3},{num2},{num1}"); //??
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{num3},{num1},{num2}"); //bien ejecutado
+                    }
+                }
+            }
+            else //Caso en el que el numero dos no sea mayor al num1
+            {
+                if (num1 > num3)
+                {
+                    Console.WriteLine($"{num2},{num1},{num3}");//bien ejecutado
+                }
+                else
+                {
+                    Console.WriteLine($"{num2},{num3},{num1}");//bien ejecutado
+                }
+            }
+        }
+    }
+}
